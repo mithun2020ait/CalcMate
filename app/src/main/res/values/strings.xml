@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Smart Calculator India</string>
+    <string name="app_subtitle">Everyday calculations made easy</string>
+
+    <string name="section_calculators">Calculators</string>
+    <string name="settings_content_description">Settings</string>
+
+    <string name="calc_basic_title">Basic Calculator</string>
+    <string name="calc_basic_desc">Quick calculations</string>
+
+    <string name="calc_gst_title">GST Calculator</string>
+    <string name="calc_gst_desc">Tax calculations</string>
+
+    <string name="calc_discount_title">Discount Calculator</string>
+    <string name="calc_discount_desc">Find final prices</string>
+
+    <string name="calc_profit_loss_title">Profit / Loss</string>
+    <string name="calc_profit_loss_desc">Business margins</string>
+
+    <string name="calc_percentage_title">Percentage</string>
+    <string name="calc_percentage_desc">Percent changes</string>
+
+    <string name="calc_history_title">History</string>
+    <string name="calc_history_desc">Past calculations</string>
+</resources>
