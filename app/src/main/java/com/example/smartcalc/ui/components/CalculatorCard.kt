@@ -1,5 +1,6 @@
 package com.example.smartcalc.ui.components
 
+
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
@@ -20,6 +21,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.semantics.contentDescription
@@ -82,6 +84,7 @@ fun CalculatorCard(
     title: String,
     description: String,
     icon: ImageVector,
+    iconColor: Color,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     contentDescription: String? = null,
@@ -118,7 +121,8 @@ fun CalculatorCard(
                     Icon(
                         imageVector = icon,
                         contentDescription = null,
-                        modifier = Modifier.size(24.dp)
+                        modifier = Modifier.size(24.dp),
+                        tint = iconColor
                     )
                 }
             }
@@ -156,6 +160,7 @@ fun CalculatorCardPreview() {
                 title = "Basic Calculator",
                 description = "Quick calculations",
                 icon = Icons.Default.Calculate,
+                iconColor = Color.Black,
                 onClick = {}
             )
         }

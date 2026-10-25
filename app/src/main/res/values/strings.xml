@@ -22,4 +22,7 @@
 
     <string name="calc_history_title">History</string>
     <string name="calc_history_desc">Past calculations</string>
+
+    <string name="coming_soon_message">Coming in the next development step</string>
+    <string name="title_settings">Settings</string>
 </resources>

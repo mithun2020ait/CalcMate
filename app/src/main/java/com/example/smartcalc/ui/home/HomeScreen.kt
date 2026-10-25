@@ -159,6 +159,7 @@ fun HomeScreenContent(
                     title = title,
                     description = description,
                     icon = item.icon,
+                    iconColor = item.iconColor,
                     onClick = { onCalculatorClick(item.type) },
                     contentDescription = "$title, $description"
                 )
@@ -174,7 +175,7 @@ fun HomeScreenPreviewLight() {
         HomeScreenContent(
             uiState = HomeUiState(
                 calculators = CalculatorType.entries.map {
-                    CalculatorCardItem(it, it.titleResId, it.descriptionResId, it.icon)
+                    CalculatorCardItem(it, it.titleResId, it.descriptionResId, it.icon, it.iconColor)
                 }
             ),
             onCalculatorClick = {},
@@ -190,7 +191,7 @@ fun HomeScreenPreviewDark() {
         HomeScreenContent(
             uiState = HomeUiState(
                 calculators = CalculatorType.entries.map {
-                    CalculatorCardItem(it, it.titleResId, it.descriptionResId, it.icon)
+                    CalculatorCardItem(it, it.titleResId, it.descriptionResId, it.icon, it.iconColor)
                 }
             ),
             onCalculatorClick = {},

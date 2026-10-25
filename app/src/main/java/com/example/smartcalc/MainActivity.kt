@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.smartcalc.ui.home.HomeScreen
+import com.example.smartcalc.ui.navigation.AppNavigation
 import com.example.smartcalc.ui.theme.SmartCalcTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SmartCalcTheme {
-                HomeScreen()
+                AppNavigation()
             }
         }
     }

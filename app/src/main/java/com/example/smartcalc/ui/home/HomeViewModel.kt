@@ -35,19 +35,12 @@ class HomeViewModel : ViewModel() {
 
     fun onCalculatorSelected(type: CalculatorType) {
         _uiState.update { currentState ->
-            currentState.copy(
-                selectedCalculator = type,
-                userMessage = "Selected ${type.name} calculator"
-            )
+            currentState.copy(selectedCalculator = type)
         }
     }
 
     fun onSettingsClicked() {
-        _uiState.update { currentState ->
-            currentState.copy(
-                userMessage = "Settings clicked"
-            )
-        }
+        // Handled via navigation callback
     }
 
     fun onUserMessageShown() {

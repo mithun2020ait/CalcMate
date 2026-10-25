@@ -28,25 +28,15 @@ class HomeViewModelTest {
     }
 
     @Test
-    fun onCalculatorSelected_updatesSelectedCalculatorAndUserMessage() {
+    fun onCalculatorSelected_updatesSelectedCalculator() {
         viewModel.onCalculatorSelected(CalculatorType.GST)
 
         val uiState = viewModel.uiState.value
         assertEquals(CalculatorType.GST, uiState.selectedCalculator)
-        assertEquals("Selected GST calculator", uiState.userMessage)
-    }
-
-    @Test
-    fun onSettingsClicked_updatesUserMessage() {
-        viewModel.onSettingsClicked()
-
-        val uiState = viewModel.uiState.value
-        assertEquals("Settings clicked", uiState.userMessage)
     }
 
     @Test
     fun onUserMessageShown_clearsUserMessage() {
-        viewModel.onSettingsClicked()
         viewModel.onUserMessageShown()
 
         val uiState = viewModel.uiState.value

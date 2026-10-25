@@ -1,5 +1,6 @@
 package com.example.smartcalc.ui.home
 
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.example.smartcalc.model.CalculatorType
 
@@ -10,7 +11,8 @@ data class CalculatorCardItem(
     val type: CalculatorType,
     val titleResId: Int,
     val descriptionResId: Int,
-    val icon: ImageVector
+    val icon: ImageVector,
+    val iconColor: Color
 )
 
 /**
