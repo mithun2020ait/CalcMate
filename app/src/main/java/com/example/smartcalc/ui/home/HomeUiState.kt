@@ -12,7 +12,7 @@ data class CalculatorCardItem(
     val titleResId: Int,
     val descriptionResId: Int,
     val icon: ImageVector,
-    val iconColor: Color
+    val accentColor: Color
 )
 
 /**

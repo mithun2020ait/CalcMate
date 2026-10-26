@@ -25,7 +25,8 @@ class HomeViewModel : ViewModel() {
                 type = type,
                 titleResId = type.titleResId,
                 descriptionResId = type.descriptionResId,
-                icon = type.icon
+                icon = type.icon,
+                accentColor = type.accentColor
             )
         }
         _uiState.update { currentState ->

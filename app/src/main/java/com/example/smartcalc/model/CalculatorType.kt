@@ -12,48 +12,48 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import com.example.smartcalc.R
 
 /**
- * Enumeration representing available calculator modes in Smart Calculator India.
+ * Enumeration representing available calculator modes in Smart Calculator India / CalcMate.
  */
 enum class CalculatorType(
     val titleResId: Int,
     val descriptionResId: Int,
     val icon: ImageVector,
-    val iconColor:  Color
+    val accentColor: Color
 ) {
     BASIC(
         titleResId = R.string.calc_basic_title,
         descriptionResId = R.string.calc_basic_desc,
         icon = Icons.Default.Calculate,
-        iconColor = Color(0xFF5B8DEF)
+        accentColor = Color(0xFF2563EB)
     ),
     GST(
         titleResId = R.string.calc_gst_title,
         descriptionResId = R.string.calc_gst_desc,
         icon = Icons.Default.Receipt,
-        iconColor = Color(0xFF26C6A0)
+        accentColor = Color(0xFF0D9488)
     ),
     DISCOUNT(
         titleResId = R.string.calc_discount_title,
         descriptionResId = R.string.calc_discount_desc,
         icon = Icons.Default.LocalOffer,
-        iconColor = Color(0xFFFFA726)
+        accentColor = Color(0xFFEA580C)
     ),
     PROFIT_LOSS(
         titleResId = R.string.calc_profit_loss_title,
         descriptionResId = R.string.calc_profit_loss_desc,
         icon = Icons.Default.TrendingUp,
-        iconColor = Color(0xFF9C6ADE)
+        accentColor = Color(0xFF7C3AED)
     ),
     PERCENTAGE(
         titleResId = R.string.calc_percentage_title,
         descriptionResId = R.string.calc_percentage_desc,
         icon = Icons.Default.Percent,
-        iconColor = Color(0xFFE94B7A)
+        accentColor = Color(0xFFE11D48)
     ),
     HISTORY(
         titleResId = R.string.calc_history_title,
         descriptionResId = R.string.calc_history_desc,
         icon = Icons.Default.History,
-        iconColor = Color(0xFF42A5F5)
+        accentColor = Color(0xFF0284C7)
     )
 }

@@ -63,12 +63,14 @@ private val LightColorScheme = lightColorScheme(
     onSecondaryContainer = Slate900,
     tertiary = Blue700,
     onTertiary = Color.White,
-    background = Slate50,
+    background = Color(0xFFF8FAFC),
     onBackground = Slate900,
     surface = Color.White,
     onSurface = Slate900,
     surfaceVariant = Slate100,
     onSurfaceVariant = Slate600,
+    surfaceContainer = Color(0xFFF1F5F9),
+    surfaceContainerHigh = Color.White,
     outline = Slate300,
     outlineVariant = Slate200,
     error = LossRed,
@@ -86,12 +88,14 @@ private val DarkColorScheme = darkColorScheme(
     onSecondaryContainer = Slate100,
     tertiary = Blue400,
     onTertiary = Blue900,
-    background = Slate900,
+    background = Color(0xFF090D16),
     onBackground = Slate50,
-    surface = Slate800,
+    surface = Color(0xFF131B2E),
     onSurface = Slate50,
     surfaceVariant = Slate700,
-    onSurfaceVariant = Slate300,
+    onSurfaceVariant = Color(0xFF94A3B8),
+    surfaceContainer = Color(0xFF0F172A),
+    surfaceContainerHigh = Color(0xFF131B2E),
     outline = Slate500,
     outlineVariant = Slate600,
     error = LossRedDark,
@@ -101,7 +105,7 @@ private val DarkColorScheme = darkColorScheme(
 @Composable
 fun SmartCalcTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -141,7 +145,7 @@ fun SmartCalcTheme(
 @Composable
 fun SmartCalculatorTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     SmartCalcTheme(
